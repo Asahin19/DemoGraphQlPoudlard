@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>Pourdlard.Database</Name>
+    <Name>Poudlard.Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{894337f3-352c-4558-8971-9773d8c37c7b}</ProjectGuid>
@@ -64,6 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="dbo\ScriptInit.sql" />
-    <None Include="Pourdlard.Database.publish.xml" />
+    <None Include="Poudlard.Database.publish.xml" />
   </ItemGroup>
 </Project>
