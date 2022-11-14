@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Students.sql" />
+    <Build Include="dbo\Tables\Houses.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbo\ScriptInit.sql" />
