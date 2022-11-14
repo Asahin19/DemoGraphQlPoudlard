@@ -43,7 +43,7 @@ namespace PoudlardAPI.Graphql.Query
                         var entityStudent = this._appContext.Add(student);
                         this._appContext.SaveChanges();
 
-                        return student;
+                        return _appContext.Students.Include(s => s.House).First(s => s.Id == student.Id);
                     });
         }
     }
