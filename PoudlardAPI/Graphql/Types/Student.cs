@@ -13,6 +13,7 @@ namespace PoudlardAPI.Graphql.Types
             Field(x => x.LastName).Description("Student's Last Name");
             Field(x => x.BirthDate).Description("Student's birth date");
             Field(x => x.Age).Description("Student's Age");
+            Field(x => x.House, type: typeof(HouseGraphType)).Description("House");
         }
     }
 }
