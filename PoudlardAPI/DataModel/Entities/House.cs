@@ -1,21 +1,21 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PoudlardAPI.DataModel.Extension;
 using System;
+using System.Collections.Generic;
 
 namespace PoudlardAPI.Entities
 {
-    public class Student
+    public class House
     {
         public int Id { get; set; }
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public int Age => BirthDate.ToAge();
-        public DateTime BirthDate { get; set; }
+        public string? Name { get; set; }
+        public int? Points { get; set; }
 
-        public static void BuildEntityType(EntityTypeBuilder<Student> typeBuilder)
+        public IEnumerable<Student>? Students { get; set; }
+
+        public static void BuildEntityType(EntityTypeBuilder<House> typeBuilder)
         {
             typeBuilder.HasKey(x => x.Id);
-            typeBuilder.Ignore(x => x.Age);
         }
     }
 }
