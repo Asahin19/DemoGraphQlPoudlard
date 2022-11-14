@@ -5,6 +5,14 @@ VALUES
 (3, 'Poufsouffle'),
 (4, 'Serdaigle')
 
+INSERT INTO dbo.Professors([Lastname], [Firstname])
+VALUES 
+('Minerva', 'McGonagall'),
+('Severus', 'Rogue'),
+('Albus', 'Dumbledore'),
+('Remus', 'Lupin')
+
+
 INSERT INTO dbo.Students ([Lastname], [Firstname], [BirthDate], [HouseId])
 VALUES 
 ('Diggory', 'Cedric', '1977-09-01', 3),
