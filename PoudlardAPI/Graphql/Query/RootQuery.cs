@@ -8,10 +8,10 @@ using System.Linq;
 namespace PoudlardAPI.Graphql.Query
 {
 
-    public class Query : ObjectGraphType
+    public class RootQuery : ObjectGraphType
     {
         private readonly ApplicationDbContext _appContext;
-        public Query(ApplicationDbContext appContext)
+        public RootQuery(ApplicationDbContext appContext)
         {
             this._appContext = appContext;
             Name = "Query";

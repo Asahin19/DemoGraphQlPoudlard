@@ -8,7 +8,7 @@ namespace PoudlardAPI.Graphql
     {
         public GraphQlSchema(IDependencyResolver resolver) : base(resolver)
         {
-            Query = resolver.Resolve<StudentQuery>();
+            Query = resolver.Resolve<RootQuery>();
         }
     }
 }
