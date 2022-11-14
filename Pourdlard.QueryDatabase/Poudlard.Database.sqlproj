@@ -63,7 +63,7 @@
     <Build Include="dbo\Tables\Students.sql" />
     <Build Include="dbo\Tables\Houses.sql" />
     <Build Include="dbo\Tables\Professors.sql" />
-    <Build Include="dbo\Tables\Awards.sql" />
+    <Build Include="dbo\Tables\Rewards.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbo\ScriptInit.sql" />

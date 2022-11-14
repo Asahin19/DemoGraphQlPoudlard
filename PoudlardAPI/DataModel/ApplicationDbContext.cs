@@ -11,7 +11,7 @@ namespace PoudlardAPI
         public DbSet<Student> Students { get; set; }
         public DbSet<House> Houses { get; set; }
         public DbSet<Professor> Professors { get; set; }
-        public DbSet<Award> Awards { get; set; }
+        public DbSet<Reward> Awards { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,7 +20,7 @@ namespace PoudlardAPI
             modelBuilder.Entity<Student>(Student.BuildEntityType);
             modelBuilder.Entity<House>(House.BuildEntityType);
             modelBuilder.Entity<Professor>(Professor.BuildEntityType);
-            modelBuilder.Entity<Award>(Award.BuildEntityType);
+            modelBuilder.Entity<Reward>(Reward.BuildEntityType);
         }
     }
 }

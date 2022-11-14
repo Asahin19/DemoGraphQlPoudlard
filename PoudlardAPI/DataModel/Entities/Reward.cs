@@ -4,7 +4,7 @@ using System;
 
 namespace PoudlardAPI.Entities
 {
-    public class Award
+    public class Reward
     {
         public int Id { get; set; }
         public int HouseId { get; set; }
@@ -14,7 +14,7 @@ namespace PoudlardAPI.Entities
         public Professor Professor { get; set; }
 
 
-        public static void BuildEntityType(EntityTypeBuilder<Award> typeBuilder)
+        public static void BuildEntityType(EntityTypeBuilder<Reward> typeBuilder)
         {
             typeBuilder.HasKey(x => x.Id);
 
