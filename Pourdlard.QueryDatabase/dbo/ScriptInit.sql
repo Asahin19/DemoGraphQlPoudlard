@@ -5,7 +5,7 @@ VALUES
 (3, 'Poufsouffle'),
 (4, 'Serdaigle')
 
-INSERT INTO dbo.Professors([Lastname], [Firstname])
+INSERT INTO dbo.Professors([Firstname], [Lastname])
 VALUES 
 ('Minerva', 'McGonagall'),
 ('Severus', 'Rogue'),
