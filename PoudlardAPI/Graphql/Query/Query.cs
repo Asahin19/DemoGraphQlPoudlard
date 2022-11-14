@@ -19,7 +19,7 @@ namespace PoudlardAPI.Graphql.Query
             Field<ListGraphType<StudentGraphType>>("students", "Return list of students", resolve: context => _appContext.Students.ToList());
 
             Field<StudentGraphType>("student", "Returns a Single Student",
-                new QueryArguments(new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id", Description = "Customer Id" }),
+                new QueryArguments(new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id", Description = "Student Id" }),
                     context => _appContext.Students.Single(x => x.Id == context.Arguments["id"].GetPropertyValue<int>()));
         }
     }
